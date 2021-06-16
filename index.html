@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Bootstrap CSS-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	 	<title></title>		
+	</head>
+	<body>
+    
+        <!--unica riga/container per la barra di navigazione-->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+
+	 <!--navbar presa da Boostrap -->
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			  <a class="navbar-brand" href="#">Attestazioni dantesche</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto">
+			      <li class="nav-item active">
+			        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Introduzione</a>
+			      </li>
+			      <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          Catalogo
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="#">Action</a>
+			          <a class="dropdown-item" href="#">Another action</a>
+			          <div class="dropdown-divider"></div>
+			          <a class="dropdown-item" href="#">Something else here</a>
+			        </div>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Persone</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Temi</a>
+			      </li>
+			    </ul>
+			    <form class="form-inline my-2 my-lg-0">
+			      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			    </form>
+			  </div>
+			</nav>
+				</div>
+			</div>
+		</div>
+
+		<!--unica riga per il titolo per tutto lo schermo. quindi fluid -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="p-4">
+						<div class="mx-auto" style="width: 200px;">Catalogo lista</div></h2>
+				</div>
+			</div>
+		</div>
+
+		<!-- 3 colonne: un piccola per il breadcrumbs e una per la nav (questa nav orizzontale si chiama TAB), e una piccolissima per la "guida" -->
+		<!--sotto il breadcrumbs ho il riordina lista e filtra lista; sotto la TAB le 3 card e sotto il "guida" nulla -->
+
+
+        <div class="container-fluid">
+			<div class="row">
+				<div class="col-md-3"><!-- in questa colonna ci sono semplici div con dei bottoni. Non sono righe di tabelle-->
+				 <nav aria-label="breadcrumb">
+					  <ol class="breadcrumb">
+					    <li class="breadcrumb-item"><a href="#">Home</a></li>
+					    <li class="breadcrumb-item active" aria-current="page">Library</li>
+					  </ol>
+					</nav>
+						<div class="dropdown"> 
+					  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					    <a class="dropdown-item" href="#">Action</a>
+					    <a class="dropdown-item" href="#">Another action</a>
+					    <a class="dropdown-item" href="#">Something else here</a>
+					  </div>
+					</div>
+			      
+			      <div>
+			      	<h3>Riordina la lista</h3>
+			      	<button type="button" class="btn btn-outline-dark">A-Z</button>
+			      	<button type="button" class="btn btn-outline-dark">Z-A</button>
+			      	<button type="button" class="btn btn-outline-dark">Ordine cronologico</button>
+			      </div>
+
+			      <div>
+			      	<h3>Filtra la lista</h3>
+			      	<button type="button" class="btn btn-primary">Opere</button>
+			      	<button type="button" class="btn btn-info">Date</button>
+					<button type="button" class="btn btn-light">Luoghi</button>
+			      </div></div> <!-- in questa colonna ci sono semplici div con dei bottoni. Non sono righe di tabelle-->
+
+
+				<div class="col-md-8"><!-- qui la TAB e le card -->
+					<ul class="nav nav-tabs">
+						  <li class="nav-item">
+						    <a class="nav-link active" href="#">All</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" href="#">Testi</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" href="#">Immagini</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Audio</a>
+						  </li>
+						   <li class="nav-item">
+						    <a class="nav-link active" href="#">Video</a>
+						  </li>
+						   <li class="nav-item">
+						    <a class="nav-link active" href="#">3D</a>
+						  </li>
+						</ul>
+
+						<!-- inserisco 3 card con immagine -->
+						<div class="row"> <!-- questo è per metterli in riga-->
+
+							<div class="card" style="width: 18rem;">
+							  <img src="immagini/dante-vela.jpg" class="card-img-top" alt="Bronzo di Dante, Vincenzo Vela">
+							  <div class="card-body">
+							    <h5 class="card-title">Bronzo di Dante</h5>
+							    <p class="card-text">
+							    	<p>Creatore: Vincenzo Vela</p>
+							   		<p>Data: 1860</p>
+									<p>Istituzione fornitrice: Galleria Civica di Arte Moderna e Contemporanea, Torino</p>
+								</p>
+							    <a href="#" class="btn btn-primary">Tutti i metadati</a>
+							  </div>
+							</div>
+
+
+							<div class="card" style="width: 18rem;">
+							  <img src="immagini/dante-rizzo.jpg" class="card-img-top" alt="Dante e Frate Ilario, Luigi Rizzo">
+							  <div class="card-body">
+							    <h5 class="card-title">Dante e Frate Ilario</h5>
+							    <p class="card-text">
+							    	<p>Creatore: Luigi Rizzo</p>
+							    	<p>Data: 1851</p>
+							    	<p>Istituzione fornitrice: Reggia di Caserta</p>
+							    </p>
+							    <a href="#" class="btn btn-primary">Tutti i metadati</a>
+							  </div>
+							</div>
+
+
+							<div class="card" style="width: 18rem;">
+							  <img src="immagini/dante-tommaseo.jpg" class="card-img-top" alt="Il Perticari confutato da Dante, Niccolò Tommaseo">
+							  <div class="card-body">
+							    <h5 class="card-title">Il Perticari confutato da Dante</h5>
+							    <p class="card-text">
+							    	<p>Creatore: Niccolò Tommaseo</p>
+							    	<p>Data: 1825</p>
+							    	<p>Istituzione fornitrice: Fondazione Ranieri di Sorbell</p>
+							    </p>
+							    <a href="#" class="btn btn-primary">Go somewhere</a>
+							  </div>
+							</div></div> <!-- qui la TAB e le card -->
+						</div>
+
+				<div class="col-md-1">
+					<h6>Guida</h6>
+				</div> <!--qui la guida -->
+			</div> <!-- chiudo la row-->
+		</div><!--chiudo il container-->
+
+		
+
+
+
+
+
+
+
+
+
+
+       <!--Bootstrap JS-->
+
+			<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+	</body>
+
+</html>
